@@ -34,5 +34,10 @@ def sum_array(total)
 end
 
 def add_s(want_s)
-  want_s.each_with_index.collect {|word, index| }
+  want_s.each_with_index.collect do |word,index|
+    if word == index[1]
+      word
+    else
+      word + "s"
+    end
 end
